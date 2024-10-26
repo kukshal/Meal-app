@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal App</title>
+    <!-- link to css -->
+    <link rel="stylesheet" href="./css folder/style.css" />
+  </head>
+ 
+  <body>
+
+    <!--full body header section -->
+    <div id="header">
+      <!-- header title -->
+      <div>
+        <a>
+          <h1>Meal App</h1>
+        </a>
+      </div>
+      <!-- favourite list link -->
+      <div>
+        <a href="#" id="fav-link" onclick="refreshfav()"><h3>FAVOURITES</h3></a>
+      </div>
+    </div>
+
+
+
+    <!-- div for search bar -->
+    <div id="container">
+      <div id="search-container">
+        <!-- input for searching  -->
+        <input
+          type="text"
+          id="search"
+          value=""
+          placeholder="Search Your Recipe..."
+        />
+      </div>
+      <!-- favourites div which is hidden initially -->
+      <div id="fav-list">
+        <h1>Favourites List</h1>
+      </div>
+      <!-- display div where searched meal result from api is shown -->
+      <div id="display"></div>
+    </div>
+
+
+
+    <script src="./js folder/script.js"></script>
+  </body>
+</html>
